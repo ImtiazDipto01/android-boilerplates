@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
 @Module
-abstract class AppModule {
+class AppModule {
 
     //Room, SharedPref will be here..
 

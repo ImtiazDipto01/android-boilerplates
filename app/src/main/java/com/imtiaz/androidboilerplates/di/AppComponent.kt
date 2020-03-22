@@ -1,6 +1,7 @@
 package com.imtiaz.androidboilerplates.di
 
 import android.app.Application
+import com.imtiaz.androidboilerplates.App
 import com.imtiaz.androidboilerplates.di.module.ActivityBuilderModule
 import com.imtiaz.androidboilerplates.di.module.AppModule
 import dagger.BindsInstance
@@ -26,4 +27,6 @@ interface AppComponent {
 
         fun build() : AppComponent
     }
+
+    fun inject(app: App)
 }
