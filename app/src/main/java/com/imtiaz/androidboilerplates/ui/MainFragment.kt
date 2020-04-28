@@ -11,6 +11,7 @@ import com.imtiaz.androidboilerplates.R
 class MainFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
     }
 
