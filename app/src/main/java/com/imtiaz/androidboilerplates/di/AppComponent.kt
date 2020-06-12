@@ -4,6 +4,7 @@ import android.app.Application
 import com.imtiaz.androidboilerplates.App
 import com.imtiaz.androidboilerplates.di.module.ActivityBuilderModule
 import com.imtiaz.androidboilerplates.di.module.AppModule
+import com.imtiaz.androidboilerplates.di.module.FragmentBindingModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule
@@ -12,9 +13,10 @@ import javax.inject.Singleton
 @Singleton
 @Component(
     modules = [
-    AndroidSupportInjectionModule::class,
-    ActivityBuilderModule::class,
-    AppModule::class
+        AndroidSupportInjectionModule::class,
+        ActivityBuilderModule::class,
+        FragmentBindingModule::class,
+        AppModule::class
     ]
 )
 interface AppComponent {
